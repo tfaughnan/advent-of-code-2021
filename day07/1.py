@@ -1,2 +1,3 @@
 exec(f'p={input()}')
-print(sum(abs(x-p[len(p)//2])for x in p))
+m=sorted(p)[len(p)//2]
+print(sum(abs(x-m)for x in p))
